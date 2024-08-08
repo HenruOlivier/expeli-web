@@ -1,0 +1,30 @@
+<!-- <div class="project-entry">
+    <h3>{{heading}}</h3>
+    <p class="project-description">{{description}}</p>
+    <ul class="project-bulletPoints">
+        <li *ngFor="let item of bulletPoints">
+            {{item}}
+        </li>
+    </ul>
+    <div class="tech-icon-container">
+        <ng-container *ngFor="let icon of icons">
+            <img src="{{icon.src}}" alt="{{icon.alt}}">
+        </ng-container>
+    </div>
+</div> -->
+
+<div class="project-entry" [ngClass]="{'expanded': isExpanded}">
+    <h3>{{heading}}</h3>
+    <p class="project-description">{{description}}</p>
+    <ul class="project-bulletPoints">
+        <li *ngFor="let item of bulletPoints">
+            {{item}}
+        </li>
+    </ul>
+    <div class="tech-icon-container">
+        <ng-container *ngFor="let icon of icons">
+            <img src="{{icon.src}}" alt="{{icon.alt}}">
+        </ng-container>
+    </div>
+    <button class="toggle-expand-btn" (click)="toggleExpand()">{{isExpanded ? 'Show Less' : 'Show More'}}</button>
+</div>

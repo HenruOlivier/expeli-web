@@ -1,0 +1,206 @@
+.intro-page-container {
+    height: calc(100vh - 55px);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    transition: height 0.5s ease 20s;
+}
+
+.text-content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 5;
+    letter-spacing: 0.3rem;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+}
+
+.text-content h2 {
+    font-size: 1.5rem;
+}
+
+.shape-container {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    width: fit-content;
+    height: 100%;
+    opacity: 25%;
+}
+
+.shape-container img {
+    filter: var(--invert-on-dark);
+    height: 100%;
+    animation: spin 100s linear infinite;
+}
+
+.shape-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150%;
+    background: linear-gradient(to right, var(--body-background-color), rgba(255, 255, 255, 0));
+}
+
+.detail-section {
+    position: absolute;
+    bottom: 40px;
+    // top: 250px;
+    left: 10%;
+    width: 50%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-container {
+    padding: 15px;
+    width: 15px;
+    height: 10px;
+    opacity: 0.5;
+    transition: width 0.5s, height 0.5s, opacity 0.5s, padding 0.5s ease 20s;
+    cursor: pointer;
+}
+
+.icon-container:hover svg {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.isInView .icon-container {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+
+.icon-container svg {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    color: var(--text-color);
+    opacity: 0.8;
+    // transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: width 0.5s ease 20s, height 0.5s ease 20s, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.phone-icon {
+    position: relative;
+}
+
+.phone-icon::after {
+    content: 'Number copied!';
+    position: absolute;
+    top: -10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(0%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease, top 0.3s ease;
+    white-space: nowrap;
+}
+
+.phone-icon.copied::after {
+    opacity: 1;
+    top: -20px;
+}
+
+@media screen and (min-width: 700px) {
+
+    .shape-container {
+        left: 40%;
+    }
+
+    .detail-section {
+        flex-direction: row;
+        // top: 250px;
+        bottom: 60px;
+    }
+
+    .phone-icon::after {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -20px;
+    }
+
+    .phone-icon.copied::after {
+        top: -30px;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .shape-container {
+        left: 50%;
+    }
+    
+}
+
+@media screen and (min-width: 1400px) {
+    .shape-container {
+        left: unset;
+        right: -20%;
+    }
+    
+}
+
+@media screen and (max-height: 900px) {
+
+    .icon-container svg {
+        width: 35px;
+        height: 35px;
+    }
+
+}
+
+@media screen and (max-height: 725px) {
+    
+    .icon-container {
+        padding: 5px;
+    }
+
+    .isInView .icon-container {
+        // width: 50px;
+        // height: 50px;
+        opacity: 1;
+    }
+
+    // .icon-container svg {
+    //     width: 30px;
+    //     height: 30px;
+    // }
+
+}
+
+@media screen and (max-height: 620px) {
+    
+    .icon-container {
+        padding: 5px;
+    }
+
+    .isInView .icon-container {
+        // width: 40px;
+        // height: 40px;
+        opacity: 1;
+    }
+
+    .icon-container svg {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
