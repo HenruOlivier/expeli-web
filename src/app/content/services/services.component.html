@@ -1,1 +1,22 @@
-<p>services works!</p>
+<section class="services-section" id="services">
+    <div class="projects-container" toggleInViewClass>
+        <div class="bg-img-container" toggleInViewClass>
+            <img src="assets/icons/lines.svg" alt="">
+            <img src="assets/icons/lines.svg" alt="">
+        </div>
+        <div class="projects-card">
+            <div class="project-header">
+                <h1 typingEffect="Featured Services" [delayTime]="500">Featured Services</h1>
+                <p>At Expeli Web, we offer a comprehensive suite of services designed to meet all your web development needs. Our expertise spans across various domains, ensuring that your digital presence is not just functional, but also exceptional. Here’s a glimpse of what we can do for you:</p>
+            </div>
+            <div class="content-container">
+                <app-project-card *ngFor="let project of projects"
+                [heading]="project.heading"
+                [description]="project.description"
+                [bulletPoints]="project.bulletPoints"
+                >    
+                </app-project-card>
+            </div>
+        </div>
+    </div>
+</section>
