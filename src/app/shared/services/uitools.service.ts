@@ -11,7 +11,7 @@ export class UitoolsService {
     return this._sidebarOpen.asObservable();
   }
 
-  private _darkTheme = new BehaviorSubject<boolean>(true);
+  private _darkTheme = new BehaviorSubject<boolean>(false);
   public get darkTheme$(): Observable<boolean> {
     return this._darkTheme.asObservable();
   }
