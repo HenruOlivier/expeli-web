@@ -29,7 +29,8 @@
     border-radius: 15px;
     max-width: 400px;
     max-height: 400px;
-    background-color: var(--primary-card);
+    // background-color: var(--primary-card);
+    background: linear-gradient(120deg, #c7acab, #a89dd4);
     box-shadow: var(--main-box-shadow);
     margin: 10px;
     display: flex;
