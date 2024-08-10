@@ -311,11 +311,11 @@
   }
   
   .scene__line--lightblue {
-    background-color: #44a5ff;
+    background-color: var(--theme-bg);
   }
   
   .scene__line--darkblue {
-    background-color: #006fff;
+    background-color: var(--theme-bg);
   }
   
   .scene__line--medium {
