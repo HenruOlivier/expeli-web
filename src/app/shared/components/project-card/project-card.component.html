@@ -1,4 +1,4 @@
-<div class="service-entry">
+<div class="service-entry" [ngClass]="{'expanded': isExpanded}">
     <h3>{{heading}}</h3>
     <p class="service-description">{{description}}</p>
     <ul class="service-bulletPoints">
@@ -6,5 +6,5 @@
             {{item}}
         </li>
     </ul>
-    <button class="learn-more-btn" (click)="onLearnMore()">Learn More</button>
+    <button class="toggle-expand-btn" (click)="toggleExpand()">{{isExpanded ? 'Show Less' : 'Show More'}}</button>
 </div>

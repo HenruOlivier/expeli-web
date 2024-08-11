@@ -14,8 +14,10 @@ export class ProjectCardComponent {
   @Input() description: string = '';
   @Input() bulletPoints: string[] = [];
 
-  onLearnMore() {
-   
+  isExpanded: boolean = false;
+
+  toggleExpand() {
+    this.isExpanded = !this.isExpanded;
   }
 
 }

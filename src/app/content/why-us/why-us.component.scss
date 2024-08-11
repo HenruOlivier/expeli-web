@@ -92,11 +92,12 @@
 .why-category {
     width: 250px;
     padding: 10px;
-    margin: 10px;
+    // margin: 10px;
     border-radius: 10px;
     // backdrop-filter: blur(100px);
     background-color: var(--primary-card);
     box-shadow: var(--main-box-shadow);
+    padding-bottom: 50px;
 }
 
 .why-category ul {
