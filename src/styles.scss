@@ -103,9 +103,11 @@
 
     // invert
     --invert-on-dark: invert(0);
+    --invert-on-light: invert(1);
 
     // opacity
     --main-graphic-opacity: 0.1;
+    --secondary-graphic-opacity: 0.5;
     --lighter-graphic-opacity: 0.1;
     --light-graphic-opacity: 0.1;
     --starting-bg-opacity: 0.2;
@@ -223,9 +225,11 @@
 
     // invert
     --invert-on-dark: invert(1);
+    --invert-on-light: invert(0);
 
     // opacity
     --main-graphic-opacity: 0.4;
+    --secondary-graphic-opacity: 0.4;
     --lighter-graphic-opacity: 0.3;
     --light-graphic-opacity: 0.15;
     --starting-bg-opacity: 0.8;

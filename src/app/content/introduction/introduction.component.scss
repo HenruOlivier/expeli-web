@@ -19,7 +19,7 @@
     height: 100%;
     opacity: 1;
     transition: opacity 1s ease-in-out;
-    // filter: invert(1); 
+    filter: var(--invert-on-light);
     z-index: 0;
     overflow: hidden;
 }
@@ -48,7 +48,7 @@
 }
 
 .isInView .bg-img-container {
-    opacity: var(--main-graphic-opacity);
+    opacity: var(--secondary-graphic-opacity);
 }
 
 .experience-list {
