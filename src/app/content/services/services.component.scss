@@ -39,7 +39,6 @@
     height: 100%;
     opacity: var(--starting-bg-opacity);
     transition: opacity 1s ease-in-out;
-    // filter: invert(1); 
     z-index: 0;
     overflow: hidden;
 }
@@ -73,7 +72,6 @@
 }
 
 .content-container {
-    // padding: 0px 0px 0px 10px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -98,7 +96,6 @@
     width: 400px;
     background-color: var(--primary-card);
     box-shadow: var(--main-box-shadow);
-    // padding: 10px;
     margin: 10px;
     display: flex;
     justify-content: space-between;
@@ -116,13 +113,11 @@
     justify-content: space-evenly;
     padding: 10px 5px;
     border-radius: 0px 0px 15px 15px;
-    // background-color: rgba(128, 128, 128, 0.452);
     background-color: var(--project-card-footer-bg);
 
 }
 
 .project-description {
-    // text-align: center;
     margin-left: 5px;
     padding-left: 15px;
     padding-right: 5px;
