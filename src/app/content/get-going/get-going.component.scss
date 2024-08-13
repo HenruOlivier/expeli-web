@@ -3,7 +3,7 @@
     margin-bottom: 150px;
     margin-top: 150px;
     // background: linear-gradient(120deg, #c7acab, #a89dd4);
-    background: linear-gradient(120deg, #e4d5d4, #c7c3db);
+    // background: linear-gradient(120deg, #e4d5d4, #c7c3db);
     position: relative;    
 }
 
@@ -52,8 +52,14 @@
     }
 }
 
-.get-going-content {
+.get-going-content svg path {
+    // fill:  linear-gradient(to right, rgb(97, 95, 112) 0%, #927e7d 100%);
+    fill: var(--primary-card);
+}
 
+.content-blob {
+    height: 220px;
+    width: 220px;
 }
 
 .blob-1 {
