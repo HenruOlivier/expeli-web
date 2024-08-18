@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    background: linear-gradient(120deg, #eee3e2, #dcdae9);
+    background: var(--primary-gradient);
 }
 
 .bg-img-container {
