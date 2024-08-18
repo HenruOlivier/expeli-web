@@ -5,7 +5,8 @@
 
     //Theme color variables
 
-    --theme-bg: rgb(162, 130, 180);    
+    // --theme-bg: rgb(162, 130, 180);    
+    --theme-bg: #9B86BD;    
     --primary: hsl(216, 74%, 53%);
     --primary-disabled: hsl(216, 47%, 37%);
 
@@ -14,7 +15,7 @@
     // linear gradients
     // --primary-gradient: linear-gradient(120deg, #30435233, #d7d2cc);
 
-    --primary-gradient: linear-gradient(120deg, #e9eee2, #dadee9);
+    --primary-gradient: linear-gradient(120deg, #eee2e2, #dadee9);
 
     // --primary-gradient: linear-gradient(120deg, #eee3e2, #dcdae9);
 
@@ -144,7 +145,7 @@
 
     // linear gradients
     // --primary-gradient: linear-gradient(120deg, #eee3e2, #dcdae9);
-    --primary-gradient: linear-gradient(120deg, #304352, #d7d2cc);
+    --primary-gradient: linear-gradient(120deg, #06141f9c, #42413f96);
 
     --secondary: hsl(0, 0%, 50%);
     --secondary-disabled: hsl(217, 4%, 62%);
