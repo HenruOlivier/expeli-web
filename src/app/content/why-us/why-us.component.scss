@@ -80,10 +80,17 @@
     width: 100%;
     z-index: 1;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+app-show-more-card {
+    margin: 30px 0px;
 }
 
 .content-container {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
