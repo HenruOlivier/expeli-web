@@ -4,6 +4,7 @@
     margin-top: 150px;
     // background: linear-gradient(120deg, #c7acab, #a89dd4);
     // background: linear-gradient(120deg, #e4d5d4, #c7c3db);
+    background: var(--primary-gradient);
     position: relative;   
     display: flex;
     justify-content: center;
@@ -140,5 +141,12 @@
     height: 100px;
     & svg {
 
+    }
+}
+
+@media (min-width: 768px) {
+
+    .get-going-header h1 {
+        font-size: 70px;
     }
 }
