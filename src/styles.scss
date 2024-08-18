@@ -12,7 +12,11 @@
     --primary-card: rgb(200, 221, 226);
 
     // linear gradients
-    --primary-gradient: linear-gradient(120deg, #eee3e2, #dcdae9);
+    // --primary-gradient: linear-gradient(120deg, #30435233, #d7d2cc);
+
+    --primary-gradient: linear-gradient(120deg, #e9eee2, #dadee9);
+
+    // --primary-gradient: linear-gradient(120deg, #eee3e2, #dcdae9);
 
     --secondary: hsl(0, 0%, 50%);
     --secondary-disabled: hsl(217, 4%, 62%);
@@ -139,7 +143,8 @@
     // --primary-card: rgb(57, 67, 70);
 
     // linear gradients
-    --primary-gradient: linear-gradient(120deg, #eee3e2, #dcdae9);
+    // --primary-gradient: linear-gradient(120deg, #eee3e2, #dcdae9);
+    --primary-gradient: linear-gradient(120deg, #304352, #d7d2cc);
 
     --secondary: hsl(0, 0%, 50%);
     --secondary-disabled: hsl(217, 4%, 62%);
