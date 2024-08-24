@@ -107,8 +107,9 @@
     width: 100%;
     transition: .3s ease-in-out;
     text-align: center;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.4px;
     font-weight: 600;
+    padding: 0px 5px;
 }
 .card-details:hover {
     transform: scale(1.05) skew(-20deg, 0deg);
